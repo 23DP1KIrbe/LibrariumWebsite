@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Librarium</title>
+  <link rel="stylesheet" href="src/styles.css" />
+  <link rel="icon" type="image/x-icon" href="src/loggo.png">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img class="logo-photo" src="src/logo.png" alt="Librarium Logo">
+      <strong>Librarium</strong>
+    </div>
+    <nav id="nav-menu">
+      <a href="#about">About App</a>
+      <a href="#guide">Guide</a>
+      <a href="#download" class="btn nav-btn">Download</a>
+    </nav>
+    <div class="hamburger" id="hamburger">☰</div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-text">All books in <span>ONE</span> place</h1>
+      <button class="btn hero-btn" onclick="window.location.href='#download'">Download</button>
+    </div>
+  </section>
+
+  <section id="about" class="content-section">
+    <h2>About App</h2>
+    <div class="about-container">
+      <div class="about-text">
+        <p>Librarium is your all-in-one book app to discover, organize, and track your reading journey. 
+          Browse thousands of books, sort by genre or rating, and save them to custom lists like Want to Read or Favorites. 
+          Rate books, write reviews, and find purchase options—all in one place. Perfect for book lovers who want a smarter way to explore literature.</p>
+      </div>
+      <div class="about-screenshot">
+        <img src="src/appSS.png" alt="Librarium App Interface" class="app-image">
+      </div>
+    </div>
+  </section>
+
+  <section id="guide" class="content-section">
+    <h2>Guide</h2>
+    <div class="guide-content">
+      <a href="https://github.com/23DP1KIrbe/Librarium" class="github-link" target="_blank">View complete guide on GitHub</a>
+      
+      <div class="image-carousel">
+        <button class="carousel-arrow left-arrow" onclick="prevImage()">&#10094;</button>
+        
+        <div class="carousel-images">
+          <img src="src/loginSS.png" alt="Guide Step 1" class="carousel-image active">
+          <img src="src/libraryMainSS.png" alt="Guide Step 2" class="carousel-image">
+          <img src="src/readListSS.png" alt="Guide Step 3" class="carousel-image">
+        </div>
+        
+        <button class="carousel-arrow right-arrow" onclick="nextImage()">&#10095;</button>
+      </div>
+      
+      <div class="carousel-dots">
+        <span class="dot active" onclick="goToImage(0)"></span>
+        <span class="dot" onclick="goToImage(1)"></span>
+        <span class="dot" onclick="goToImage(2)"></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="download" class="content-section download-section">
+    <h2>Download</h2>
+    <div class="download-container">
+      <div class="download-info">
+        <h3>Get Librarium Now</h3>
+        <p>Best library application!</p>
+        <button class="btn download-btn">Download Now</button>
+      </div>
+      <div class="download-image">
+        <div class="image-container">
+          <img src="src/appSS2.png" alt="Librarium App Screenshot" class="app-screenshot">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>2025 Right reserved by Librarium</p>
+  </footer>
+
+  <script src="src/script.js"></script>
+</body>
+</html>
